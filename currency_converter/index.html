@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reusable.css" />
+  </head>
+
+  <body>
+    <!-- THE TITLE  -->
+    <header>
+      <div class="container center-text margin-bottom">
+        <p class="title">Currency Converter</p>
+        <p class="title-caption">Inspired by Constantinsane</p>
+      </div>
+    </header>
+
+    <!-- CONVERTER -->
+    <main converter>
+      <div class="container center-text round">
+        <h2 class="converter-title">Convert to euros or xof</h2>
+        <form action="">
+          <ol>
+            <!-- Step1 (pick currency) -->
+            <li>
+              <div class="step1">
+                <div class="alignment">
+                  <span>Pick Currency</span>
+                  <select class="select" name="" id="">
+                    <option value="euro">Euro</option>
+                    <option value="xof">XOF</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+
+            <!-- Step2 (Add the amount) -->
+            <li>
+              <div class="step2">
+                <div class="alignment">
+                  <p>Add the amount</p>
+                  <div class="convert-input">
+                    <p class="dollar-icon">$</p>
+                    <input class="amount center-text" type="text" />
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Step3 (Convert button) -->
+            <li class="step 3">
+              <button class="convert-btn">Convert</button>
+            </li>
+          </ol>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

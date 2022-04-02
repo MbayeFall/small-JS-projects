@@ -1,0 +1,220 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+/*
+- Font weights
+Default: 400
+- Line heights
+Default: 1
+- Letter spacing
+-0.5px
+--- 02 COLORS
+- Primary:#00D2BE
+- Tints: #e6fbf9, #ccf6f2;
+- Shades: #001513
+- Accents:
+- Greys:for instance #555 #333
+--- 05 SHADOWS
+--- 06 BORDER-RADIUS
+Default: 9px
+small: 2.4rem
+--- 07 WHITESPACE
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/* THE TITLE  */
+
+.container {
+  background-color: #ccf6f2;
+  max-width: 96rem;
+  padding: 1.2rem;
+  margin: 2rem auto 0;
+}
+
+.title {
+  font-size: 8rem;
+  font-weight: 500;
+  letter-spacing: -1.1px;
+  margin: 0.2rem 0;
+  color: #333;
+}
+
+.title-caption {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -0.6px;
+}
+
+/* CONVERTER */
+
+ol {
+  list-style-position: inside;
+}
+
+li {
+  margin: 8rem 0;
+}
+
+.converter-title {
+  text-transform: capitalize;
+  font-size: 3.6rem;
+  font-weight: 500;
+  padding: 2.4rem 0;
+  background-color: #e6fbf9;
+}
+
+li {
+  font-size: 3rem;
+}
+
+.step1,
+.step2 {
+  display: inline-block;
+}
+
+.alignment {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.select {
+  border-color: #00d2be;
+  border-width: 2px;
+  border-radius: 12px;
+  color: #00d2be;
+  font-weight: 700;
+}
+
+.dollar-icon {
+  display: flex;
+  align-items: center;
+  background-color: #00d2be;
+  color: #555;
+  padding: 0 1.2rem;
+  border-radius: 16px 0 0 16px;
+  font-size: 1.6rem;
+}
+
+.convert-input {
+  display: flex;
+}
+
+.amount {
+  width: 8rem;
+  border-width: 2px;
+  border-color: #00d2be;
+  border-radius: 0 16px 16px 0;
+}
+
+.convert-btn,
+.convert-btn:link,
+.convert-btn:visited {
+  font-size: 3.6rem;
+  padding: 0 3.6rem;
+  border-radius: 16px;
+  background-color: #00d2be;
+  border-color: white;
+  color: #001513;
+}
+
+.convert-btn:hover,
+.convert-btn:active {
+  background-color: #ccf6f2;
+  color: #555;
+  border-color: #00d2be;
+  transform: translateY(-1px);
+  transition: all 0.05s;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 766px) {
+  .title {
+    font-size: 6.4rem;
+  }
+
+  .converter-title {
+    font-size: 2.4rem;
+  }
+
+  li {
+    font-size: 2rem;
+  }
+
+  .convert-btn {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 766px) {
+  .title {
+    font-size: 6.4rem;
+  }
+
+  .converter-title {
+    font-size: 2.4rem;
+  }
+
+  li {
+    font-size: 2rem;
+  }
+
+  .convert-btn {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 326px) {
+  .title {
+    font-size: 4.4rem;
+  }
+
+  .converter-title {
+    font-size: 1.8rem;
+  }
+
+  li {
+    font-size: 1.6rem;
+  }
+
+  .convert-btn {
+    font-size: 2rem;
+  }
+
+  .amount {
+    width: 4rem;
+  }
+}
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
